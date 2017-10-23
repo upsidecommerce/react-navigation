@@ -182,7 +182,7 @@ class TabBarBottom extends PureComponent<DefaultProps, Props, void> {
     return (
       <Animated.View style={[styles.tabBar, style]}>
         {routes.map((route: NavigationRoute, index: number) => {
-          if (route.key === 'Setting') return null
+          if (route.key === 'Support') return null
           const focused = index === navigation.state.index;
           const scene = { route, index, focused };
           const onPress = getOnPress(scene);
